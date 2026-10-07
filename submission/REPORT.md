@@ -1,7 +1,7 @@
 # Lab 21 — Evaluation Report
 
-**Họ tên**: <điền>  **MSSV**: <điền>  **Ngày**: <điền>
-**Tier**: `<CPU|LAPTOP|T4|BIGGPU>`  **Base model**: `<model id>`  **GPU thực tế**: `<T4 16GB / ...>`
+**Họ tên**: Lê Quang Ngọc  **MSSV**: 2A202602664  **Ngày**: 07/10/2026
+**Tier**: `T4`  **Base model**: `unsloth/Qwen3.5-4B`  **GPU thực tế**: `NVIDIA Tesla T4 (14,6 GB khả dụng)`
 
 > Mọi con số dưới đây phải khớp với file trong `results/`. Grader kiểm tra chéo.
 >
@@ -15,11 +15,11 @@
 
 | | |
 |---|---|
-| Dataset | `<tên + số mẫu>` (mặc định: 250 ticket CSKH → JSON triage) |
+| Dataset | `250 ticket CSKH tiếng Việt → JSON triage 4 trường` — chọn bộ mặc định vì có nhãn khách quan cho target, format và regression |
 | Train / val | `<n>` / `<n>` (seed 42) |
 | `max_length` | `<n>` — p95 đo được là `<n>` *(results/token_stats.json)* |
-| `MASK_MODE` | `<assistant-only | ...>` |
-| Epochs / max_steps | `<n>` |
+| `MASK_MODE` | `assistant-only` |
+| Epochs / max_steps | `2 / <điền từ results/runs.csv>` |
 
 **Template có giữ khối `<think>` không?** `<có/không>` — *(results/template_check.json)*
 Nếu không: bạn đã xử lý thế nào?
